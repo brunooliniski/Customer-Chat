@@ -1,5 +1,5 @@
 import express from "express";
-
+import "./database";
 
 const app = express();
 
@@ -11,7 +11,7 @@ const app = express();
  * DELETE
  */
 
-app.get("/", (request, response ) => {
+app.get("/", (request, response) => {
     return response.json({
         message: "Olá"
     })
